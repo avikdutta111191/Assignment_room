@@ -1,0 +1,167 @@
+﻿
+@page
+
+
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Pormo Code Demo";
+}
+
+@section devCss{
+      <link rel="stylesheet" href="~/css/homePage.css" asp-append-version="true"/>
+}
+
+@section devJs{
+      <link rel="application/javascript" href="~/js/homePage.js" asp-append-version="true"/>
+}
+
+<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <img src="assets/images/Glyph.png" class="img_logo" alt="Sample Photo" />
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <div class="sidebarListItem">
+                    <div class="li-icon-circle">
+                         <i class="far fa-circle"></i>
+                    </div>    
+                    </div>
+                </li>
+                <li>
+                     <div class="sidebarListItem">
+                    <div class="li-icon-circle">
+                         <i class="far fa-circle"></i>
+                    </div>    
+                    </div>
+                </li>
+                
+                <li>
+                     <div class="sidebarListItem">
+                    <div class="li-icon-circle">
+                         <i class="far fa-circle"></i>
+                    </div>    
+                    </div>
+              </li>
+
+                <li>
+                     <div class="sidebarListItem">
+                    <div class="li-icon-circle">
+                         <i class="far fa-circle"></i>
+                    </div>    
+                    </div>
+              </li>  
+                <li>
+                     <div class="sidebarListItem">
+                    <div class="li-icon-circle">
+                         <i class="far fa-circle"></i>
+                    </div>    
+                    </div>
+              </li>  
+
+              <li>
+                     <div class="sidebarListItem">
+                    <div class="li-icon-circle">
+                         <i class="far fa-circle"></i>
+                    </div>    
+                    </div>
+              </li>  
+
+
+            </ul>
+
+
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            
+            <div class="service">
+                Services
+            </div>
+
+
+                            <div class="card-rows">
+                            @foreach (var promocode in Model.promoCodes)
+                            {
+
+
+                            <div class="card" >
+                            <div class="card-body">
+
+
+                                <div class="row">
+                                    <div class="col-sm">
+
+                                        <div class="promoTitle">
+                                            @promocode.title
+                                        </div>
+
+                                        <div class="promoDescription">
+                                            @promocode.description
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-sm">
+
+                                        <div class="promo-code">
+                                            <div class="promo-code-form-headder">
+                                                        Promocode
+                                            </div>
+                                            
+                                            <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button"><i class="far fa-clone" style="color:#0085FF;"></i></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="btn-activate-promo">
+                                             <a href="#" class="btn btn-primary" >Activate bonus</a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            }
+                            </div>
+
+
+
+        </div>
+    </div>
+

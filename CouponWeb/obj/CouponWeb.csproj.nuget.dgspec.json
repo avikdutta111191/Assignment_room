@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/hppc1/Documents/Assignment_room/CouponWeb/CouponWeb.csproj": {}
+  },
+  "projects": {
+    "/home/hppc1/Documents/Assignment_room/CouponWeb/CouponWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/hppc1/Documents/Assignment_room/CouponWeb/CouponWeb.csproj",
+        "projectName": "CouponWeb",
+        "projectPath": "/home/hppc1/Documents/Assignment_room/CouponWeb/CouponWeb.csproj",
+        "packagesPath": "/home/hppc1/.nuget/packages/",
+        "outputPath": "/home/hppc1/Documents/Assignment_room/CouponWeb/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hppc1/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.24, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/123/sdk/3.1.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
